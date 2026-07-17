@@ -1,0 +1,17 @@
+release/gamepage.o
+release/homepage.o
+release/infopage.o
+release/loginpage.o
+release/main.o
+release/playernamespage.o
+release/profilepage.o
+release/replay.o
+release/signuppage.o
+release/moc_gamepage.o
+release/moc_homepage.o
+release/moc_infopage.o
+release/moc_loginpage.o
+release/moc_playernamespage.o
+release/moc_profilepage.o
+release/moc_replay.o
+release/moc_signuppage.o

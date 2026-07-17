@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InfoPage</class>
+ <widget class="QWidget" name="InfoPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>472</width>
+     <height>513</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="nameLabel">
+      <property name="text">
+       <string>Tic Tac Toe Game</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="objectiveLabel">
+      <property name="text">
+       <string>Objective: 
+ The objective of Tic Tac Toe is to be the first player to create a line 
+ (horizontal, vertical, or diagonal) of three of your symbols (X or O)
+ on the game board</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="componentsLabel">
+      <property name="text">
+       <string>Game Components:
+ Game Board: The game board consists of a 3x3 grid where players
+ will place their symbols </string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="symbolsLabel">
+      <property name="text">
+       <string>Symbols:
+ Players use two distinct symbols, typically X and O</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="turnsLabel">
+      <property name="text">
+       <string>Turns: 
+ Players take turns placing their symbols on empty spaces of the board</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="rulesLabel">
+      <property name="text">
+       <string>Game Rules:
+ 1) Players alternate turns, starting with one player placing their symbol 
+ (X or O) on an empty space of the board
+
+ 2) The game continues until a player achieves a line of three of their
+ symbols in a row (horizontal, vertical, or diagonal) or until all spaces 
+ on the board are filled 
+
+ 3)If all spaces are filled without a line of three symbols, the game ends
+ in a draw.  </string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="homeButton">
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

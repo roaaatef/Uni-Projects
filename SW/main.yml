@@ -1,0 +1,36 @@
+name: Qt C++ CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v3
+      with:
+        version: '6.7.0' # Specify the Qt version you need
+        modules: 'qtmultimedia' # Specify the Qt modules you need
+
+    - name: Add Qt to PATH
+      run: echo "$HOME/Qt/6.7.0/gcc_64/bin" >> $GITHUB_PATH
+
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y build-essential
+
+    - name: Build application
+      run: |
+        mkdir -p build
+        cd build
+        qmake ../Tic_Tac_Toe_Game_Application/Tic_Tac_Toe_Game_Application.pro
+        make
+    - name: Run Bash script
+      run: chmod u+x ./Tic_Tac_Toe_Game_Application/myscript.sh && ./Tic_Tac_Toe_Game_Application/myscript.sh
